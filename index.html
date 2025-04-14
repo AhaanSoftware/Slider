@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiper Example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    .swiper {
+      width: 100%;
+      
+    }
+    .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     
+      font-size: 18px;
+      padding: 10px;
+      box-sizing: border-box;
+      
+    }
+    .flag {
+      
+      margin-bottom: 10px;
+    }
+    .swiper-slide a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color:black;
+ 
+}
+
+.swiper-slide a:hover {
+  opacity: 0.8; 
+  text-decoration: underline;
+}
+
+.swiper-slide img {
+  width: 100%;
+  max-width: 150px; /* Limit the image size */
+  border-radius: 8px;
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow with larger spread and blur */
+  transition: box-shadow 0.3s ease;
+}
+
+.swiper-slide img:hover {
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3); /* Even stronger shadow on hover */
+}
+
+
+.swiper-slide a div {
+  margin-top: 10px; /* Add some space between the image and the country name */
+  font-size: 16px;
+}
+/* Style the next/prev buttons */
+.swiper-button-next, .swiper-button-prev {
+  width: 30px; /* Set width */
+  height: 30px; /* Set height */
+  border-radius: 50%; /* Make the button round */
+  background-color: #007BFF; /* Button color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10; /* Ensure the buttons are on top of the slides */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Next button - position it on the right */
+.swiper-button-next {
+  right: 10px; /* Adjust the right position */
+}
+
+/* Previous button - position it on the left */
+.swiper-button-prev {
+  left: 10px; /* Adjust the left position */
+}
+
+/* Add arrow icons inside the buttons */
+.swiper-button-next::after, .swiper-button-prev::after {
+  font-family: 'Font Awesome 5 Free'; /* Use FontAwesome for icons */
+  content: '';
+  font-size: 16px; /* Adjust the size of the arrow */
+  color: white; /* Arrow color */
+  font-weight: 900; /* Make the arrow bold */
+}
+
+/* Style for next arrow */
+.swiper-button-next::after {
+  content: '\f061'; /* Right arrow icon */
+}
+
+/* Style for previous arrow */
+.swiper-button-prev::after {
+  content: '\f060'; /* Left arrow icon */
+}
+
+/* Hover effect */
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  background-color: #0056b3; /* Darker button color on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+}
+
+
+
+  </style>
+</head>
+<body>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="https://innovarecn.ahaanmedia.com/australia/">
+            <img src="https://innovare.ahaanmedia.com/wp-content/uploads/2024/12/8-1.png" alt="Australia Flag" class="flag">
+            Australia
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://innovarecn.ahaanmedia.com/bangladesh/">
+            <img src="https://innovare.ahaanmedia.com/wp-content/uploads/2025/02/Untitled-design-5.jpg" alt="UK Flag" class="flag">
+            Bangladesh
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://innovarecn.ahaanmedia.com/cambodia/">
+            <img src="https://innovare.ahaanmedia.com/wp-content/uploads/2024/12/10-1.png" alt="Cambodia Flag" class="flag">
+            Cambodia
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://innovarecn.ahaanmedia.com/china/">
+            <img src="https://innovare.ahaanmedia.com/wp-content/uploads/2024/12/9-1.png" alt="China Flag" class="flag">
+            China
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://innovarecn.ahaanmedia.com/hong-kong/">
+            <img src="https://innovare.ahaanmedia.com/wp-content/uploads/2024/12/3-1.png" alt="Hong Kong Flag" class="flag">
+            Hong Kong
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://innovarecn.ahaanmedia.com/india/">
+            <img src="https://innovare.ahaanmedia.com/wp-content/uploads/2024/12/11-1.png" alt="India Flag" class="flag">
+            India
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://innovarecn.ahaanmedia.com/indonesia/">
+            <img src="https://innovare.ahaanmedia.com/wp-content/uploads/2024/12/6-1.png" alt="Indonesia Flag" class="flag">
+            Indonesia
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://innovarecn.ahaanmedia.com/japan/">
+            <img src="https://innovare.ahaanmedia.com/wp-content/uploads/2024/12/1-1.png" alt="Japan Flag" class="flag">
+            Japan
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://innovarecn.ahaanmedia.com/malaysia/">
+            <img src="https://innovare.ahaanmedia.com/wp-content/uploads/2024/12/5-1.png" alt="Malaysia Flag" class="flag">
+            Malaysia
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://innovarecn.ahaanmedia.com/myanmar/">
+            <img src="https://innovare.ahaanmedia.com/wp-content/uploads/2024/12/Untitled-design-17.png" alt="Myanmar Flag" class="flag">
+            Myanmar
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://innovarecn.ahaanmedia.com/new-zealand/">
+            <img src="https://innovare.ahaanmedia.com/wp-content/uploads/2024/12/12-1.png" alt="New Zealand Flag" class="flag">
+            New Zealand
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://innovarecn.ahaanmedia.com/pakistan/">
+            <img src="https://innovare.ahaanmedia.com/wp-content/uploads/2024/12/13-1.png" alt="Pakistan Flag" class="flag">
+            Pakistan
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://innovarecn.ahaanmedia.com/papua-new-guinea/">
+            <img src="https://innovare.ahaanmedia.com/wp-content/uploads/2024/12/14-1.png" alt="Papua New Guinea Flag" class="flag">
+            Papua New Guinea
+          </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="https://innovarecn.ahaanmedia.com/philippines/">
+              <img src="https://innovare.ahaanmedia.com/wp-content/uploads/2024/12/7-1.png" alt="Philippines Flag" class="flag">
+              Philippines
+            </a>
+          </div>
+        <div class="swiper-slide">
+          <a href="https://innovarecn.ahaanmedia.com/singapore/">
+            <img src="https://innovare.ahaanmedia.com/wp-content/uploads/2024/12/2-1.png" alt="Singapore Flag" class="flag">
+            Singapore (EA Licence No: 23S2001)
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://innovarecn.ahaanmedia.com/south-korea/">
+            <img src="https://innovare.ahaanmedia.com/wp-content/uploads/2024/12/15.png" alt="South Korea Flag" class="flag">
+            South Korea
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://innovarecn.ahaanmedia.com/taiwan/">
+            <img src="https://innovare.ahaanmedia.com/wp-content/uploads/2024/12/16.png" alt="Taiwan Flag" class="flag">
+            Taiwan
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://innovarecn.ahaanmedia.com/thailand/">
+            <img src="https://innovare.ahaanmedia.com/wp-content/uploads/2024/12/17.png" alt="Thailand Flag" class="flag">
+            Thailand
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://innovarecn.ahaanmedia.com/vietnam/">
+            <img src="https://innovare.ahaanmedia.com/wp-content/uploads/2024/12/4-1.png" alt="Vietnam Flag" class="flag">
+            Vietnam
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://innovarecn.ahaanmedia.com/south-africa/">
+            <img src="https://innovare.ahaanmedia.com/wp-content/uploads/2024/12/18.png" alt="South Africa Flag" class="flag">
+            South Africa
+          </a>
+        </div>
+      </div>
+      
+
+    <!-- Navigation buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      direction: 'horizontal',
+      loop: true,
+      slidesPerView: 6, 
+      spaceBetween: 10, 
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      loopedSlides: 6, 
+      breakpoints: {
+        
+        1200: {
+          slidesPerView: 6,
+        }, 
+        768: {
+          slidesPerView: 3,
+        },
+        480: {
+          slidesPerView: 2,
+        },
+        320: {
+          slidesPerView: 1,
+        },
+      }
+    });
+  </script>
+</body>
+</html>
